@@ -22,3 +22,7 @@ class registroSerializer(serializers.HyperlinkedModelSerializer):
 		model = registro
 		fields = ('placa','nombre','id_caja','movimiento','estado','fecha')
 
+#class registroSerializer(serializers.Serializer):
+#	placa = serializers.CharField(required = True)
+#	nombre = serializers.CharField(required = True)
+

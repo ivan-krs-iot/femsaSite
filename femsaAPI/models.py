@@ -18,9 +18,9 @@ class caja(models.Model):
 
 
 class registro(models.Model):
-	placa = models.CharField(max_length=10)
-	nombre = models.CharField(max_length=10)
-	id_caja = models.CharField(max_length=50)
+	placa = models.CharField(max_length=10,blank=True)
+	nombre = models.CharField(max_length=10,blank=True)
+	id_caja = models.CharField(max_length=50,blank=True)
 	movimiento = models.CharField(max_length=10)
 	estado = models.CharField(max_length=10)
 	fecha = models.DateTimeField(auto_now_add=True)
